@@ -1,0 +1,31 @@
+<script src="http://code.highcharts.com/highcharts.js"></script>
+<script src="http://code.highcharttable.org/master/jquery.highchartTable-min.js"></script> 
+
+<table class="highchart" data-graph-container-before="1" data-graph-type="pie" style="display:none" data-graph-datalabels-enabled="1" data-graph-color-1="#999">
+    <thead>
+        <tr>                                  
+            <th>Month</th>
+            <th>Sales</th>
+        </tr>
+     </thead>
+     <tbody>
+        <tr>
+            <td>January</td>
+            <td data-graph-name="January" data-graph-item-color="#ccc">8000</td>
+        </tr>
+        <tr>
+            <td>February</td>
+            <td>12000</td>
+        </tr>
+        <tr>
+            <td>March</td>
+            <td>18000</td>
+        </tr>
+    </tbody>
+</table>
+<script>
+$(document).ready(function() {
+  $('table.highchart').highchartTable();
+});
+
+</script>
